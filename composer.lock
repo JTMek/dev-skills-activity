@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "de952c2ded815dae8eb337c2abb8c6ac",
+    "content-hash": "ab4c57eb749888184915d12bfb1e5a71",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -508,6 +508,54 @@
                 "plugin"
             ],
             "time": "2019-05-23T13:16:39+00:00"
+        },
+        {
+            "name": "craftcms/redactor",
+            "version": "2.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/craftcms/redactor.git",
+                "reference": "835eaf0d7442acb1bc716985f9672c7cd4e8531c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/craftcms/redactor/zipball/835eaf0d7442acb1bc716985f9672c7cd4e8531c",
+                "reference": "835eaf0d7442acb1bc716985f9672c7cd4e8531c",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.4.0-RC1"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Redactor",
+                "handle": "redactor",
+                "documentationUrl": "https://github.com/craftcms/redactor/blob/v2/README.md"
+            },
+            "autoload": {
+                "psr-4": {
+                    "craft\\redactor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pixel & Tonic",
+                    "homepage": "https://pixelandtonic.com/"
+                }
+            ],
+            "description": "Edit rich text content in Craft CMS using Redactor by Imperavi.",
+            "keywords": [
+                "Redactor",
+                "cms",
+                "craftcms",
+                "html",
+                "yii2"
+            ],
+            "time": "2020-03-18T14:47:04+00:00"
         },
         {
             "name": "craftcms/server-check",
@@ -1145,6 +1193,7 @@
                     "email": "jakub.onderka@gmail.com"
                 }
             ],
+            "abandoned": "php-parallel-lint/php-console-color",
             "time": "2018-09-29T17:23:10+00:00"
         },
         {
@@ -1191,6 +1240,7 @@
                 }
             ],
             "description": "Highlight PHP code in terminal",
+            "abandoned": "php-parallel-lint/php-console-highlighter",
             "time": "2018-09-29T18:48:56+00:00"
         },
         {
@@ -4953,5 +5003,6 @@
     "platform-dev": [],
     "platform-overrides": {
         "php": "7.0"
-    }
+    },
+    "plugin-api-version": "1.1.0"
 }

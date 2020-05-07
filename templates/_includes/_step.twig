@@ -1,0 +1,29 @@
+{% for block in blocks %}
+    <div class="flex-wrap md:flex mb-10 -mx-5">
+        <div class="w-full md:w-2/5 px-5 my-5">
+            <div class="table-cell">
+                {% for image in block.stepImage.all() %}
+                    <img src="{{ image.url }}" alt="{{ image.title }}" />
+                {% endfor %}
+            </div>
+            <div class="table-cell align-middle">
+                <div class="table-cell align-middle">
+                    <div class="-ml-8 lg:-ml-10 relative">
+                        <div class="bg-blue-800 rounded-full w-16 lg:w-20 h-16 lg:h-20 table">
+                            <div class="table-cell align-middle text-center text-4xl text-white">
+                                {{ loop.index }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full md:w-3/5 px-5 md:mt-5">
+            <h2 class="font-heading text-3xl leading-tight">{{ block.stepTitle }}</h2>
+            <div class="showMore italic md:hidden"><i class="fas fa-caret-right"></i> Show more</div>
+            <div class="hidden md:block">
+                {{ block.stepText }}
+            </div>
+        </div>
+    </div>
+{% endfor %}

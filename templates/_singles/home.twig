@@ -1,0 +1,8 @@
+{% extends "_layout" %}
+
+{% block content %}
+    <h4 class="w-full"><span class="bg-blue-800 p-1 uppercase text-white">{{ entry.pageTitle }}<span></h4>
+    <h1 class="w-full text-5xl lg:text-6xl leading-tight mt-3 md:mb-3 font-heading">{{ entry.pageHeader }}</h1>
+
+    {% include "_includes/_step" with { blocks: entry.stepFields.all() } only %}  
+{% endblock %}
